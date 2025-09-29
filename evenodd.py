@@ -7,10 +7,16 @@ def is_prime(n):
             return False
     return True
 
-
 # Main program
 num = int(input("Enter a number: "))
 
+# Check even or odd
+if num % 2 == 0:
+    print(f"{num} is Even")
+else:
+    print(f"{num} is Odd")
+
+# Check prime
 if is_prime(num):
     print(num, "is a prime number.")
 else:
